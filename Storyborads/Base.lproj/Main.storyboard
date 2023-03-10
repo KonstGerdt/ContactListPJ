@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar View Controller-->
+        <!--ContactList-->
         <scene sceneID="f4I-xQ-o6d">
             <objects>
                 <tabBarController id="Y0P-ah-Phj" customClass="TabBarViewController" customModule="ContactListPJ" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="FQJ-8n-lzL"/>
+                    <navigationItem key="navigationItem" title="ContactList" id="FQJ-8n-lzL"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oNK-hg-C4v">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -67,16 +67,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIc-PO-4sZ">
-                                <rect key="frame" x="16" y="152" width="361" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIc-PO-4sZ">
+                                <rect key="frame" x="16" y="152" width="361" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oN-ts-ONw">
-                                <rect key="frame" x="16" y="198" width="361" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oN-ts-ONw">
+                                <rect key="frame" x="16" y="190.33333333333334" width="361" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -84,6 +82,15 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hph-FK-wM3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7oN-ts-ONw" firstAttribute="top" secondItem="qIc-PO-4sZ" secondAttribute="bottom" constant="18" id="3An-sF-caE"/>
+                            <constraint firstItem="qIc-PO-4sZ" firstAttribute="top" secondItem="hph-FK-wM3" secondAttribute="top" constant="49" id="KBF-b4-7qM"/>
+                            <constraint firstItem="7oN-ts-ONw" firstAttribute="top" secondItem="qIc-PO-4sZ" secondAttribute="bottom" constant="18" id="Meu-an-Khr"/>
+                            <constraint firstItem="7oN-ts-ONw" firstAttribute="leading" secondItem="hph-FK-wM3" secondAttribute="leading" constant="16" id="Ur4-Ew-lZb"/>
+                            <constraint firstItem="qIc-PO-4sZ" firstAttribute="leading" secondItem="hph-FK-wM3" secondAttribute="leading" constant="16" id="VlE-ql-ty6"/>
+                            <constraint firstItem="hph-FK-wM3" firstAttribute="trailing" secondItem="qIc-PO-4sZ" secondAttribute="trailing" constant="16" id="bXt-je-xci"/>
+                            <constraint firstItem="hph-FK-wM3" firstAttribute="trailing" secondItem="7oN-ts-ONw" secondAttribute="trailing" constant="16" id="yIy-u2-iar"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ofm-oL-qcT"/>
                     <connections>
